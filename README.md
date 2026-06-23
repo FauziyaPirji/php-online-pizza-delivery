@@ -1,47 +1,50 @@
 # 🍕 PHP Online Pizza Delivery System
 
-A full-stack web application that allows customers to browse pizzas, place orders, manage their profiles, and track orders through an intuitive interface. The system also provides an admin panel for managing menu items, customers, and orders.
+A responsive web-based pizza ordering application developed using PHP, MySQL, Bootstrap, HTML, CSS, and JavaScript. The system allows customers to browse pizzas, place orders, manage their accounts, and enables administrators to manage menu items, customers, and orders through an admin dashboard.
 
 ---
 
-## 📌 Project Overview
+## 📖 Project Overview
 
-The PHP Online Pizza Delivery System is a web-based application developed using PHP and MySQL. It simplifies the online food ordering process by providing customers with a user-friendly platform to order pizzas while allowing administrators to efficiently manage products and customer orders.
+The PHP Online Pizza Delivery System is a full-stack web application designed to simplify online pizza ordering. Customers can create accounts, browse available pizzas, add items to their cart, and place orders. Administrators can manage pizzas, categories, customers, and orders through a dedicated admin panel.
 
-This project was developed as an academic project to gain practical experience in web development, database management, and full-stack application development.
+This project was developed as an academic project to gain practical experience in web development, database management, authentication systems, and responsive UI design.
 
 ---
 
 ## ✨ Features
 
-### Customer Features
+### 👤 Customer Features
 
-* User Registration and Login
+* User Registration
+* User Login & Logout
 * Browse Pizza Menu
 * View Pizza Details
-* Add Items to Cart
+* Add to Cart
 * Update Cart Quantity
 * Place Orders
-* View Order History
 * Manage Profile Information
 * Contact Us Page
 
-### Admin Features
+### 🔑 Admin Features
 
 * Admin Authentication
+* Admin Dashboard
 * Manage Pizza Categories
-* Add, Update, and Delete Menu Items
-* Manage Customer Information
+* Add New Pizza Items
+* Update Pizza Information
+* Delete Pizza Items
+* Manage Customer Records
 * View Customer Orders
-* Order Status Management
-* Dashboard Overview
+* Order Management
 
-### UI Features
+### 🎨 UI Features
 
 * Responsive Design using Bootstrap
-* User-Friendly Navigation
+* Mobile-Friendly Layout
 * Interactive Forms
-* Clean and Modern Interface
+* Clean User Interface
+* Easy Navigation
 
 ---
 
@@ -75,40 +78,41 @@ php-online-pizza-delivery/
 │
 ├── admin/
 ├── css/
-├── js/
+├── JS/
+├── Images/
 ├── database/
 ├── pizzahouse.sql
 ├── index.php
 ├── login.php
 ├── register.php
 ├── contact_us.php
+├── cart.php
 └── README.md
 ```
 
 ---
 
-## 🚀 Installation and Setup
+## 🚀 Installation Guide
 
-### Prerequisites
+### Step 1: Download the Project
 
-Before running the project, install:
-
-* XAMPP
-* Web Browser (Chrome, Edge, Firefox)
+Download the project ZIP file or clone the repository.
 
 ---
 
-### Step 1: Clone or Download the Project
+### Step 2: Extract the Project
 
-Download the ZIP file or clone the repository:
+Extract the ZIP file.
 
-```bash
-git clone https://github.com/FauziyaPirji/php-online-pizza-delivery.git
+Rename the project folder:
+
+```text
+php-online-pizza-delivery
 ```
 
 ---
 
-### Step 2: Move Project to XAMPP
+### Step 3: Move Project to XAMPP
 
 Copy the project folder into:
 
@@ -124,51 +128,109 @@ C:\xampp\htdocs\php-online-pizza-delivery
 
 ---
 
-### Step 3: Start Apache and MySQL
+### Step 4: Start Apache and MySQL
 
-1. Open XAMPP Control Panel
-2. Start:
+Open XAMPP Control Panel and start:
 
-   * Apache
-   * MySQL
+* Apache
+* MySQL
 
 ---
 
-### Step 4: Import Database
+### Step 5: Create Database
 
-1. Open phpMyAdmin
+Open:
 
 ```text
 http://localhost/phpmyadmin
 ```
 
-2. Create a new database:
+Create a new database named:
 
 ```text
 pizzahouse
 ```
 
-3. Click Import
+---
 
-4. Select:
+### Step 6: Import Database
+
+1. Select the database.
+2. Click Import.
+3. Choose:
 
 ```text
 pizzahouse.sql
 ```
 
-5. Click Go
+4. Click Go.
 
 ---
 
-### Step 5: Run the Application
+### Step 7: Run the Project
 
-Open your browser and visit:
+Open:
 
 ```text
-http://localhost/php-online-pizza-delivery
+http://localhost/php-online-pizza-delivery/
 ```
 
-The application should now be running successfully.
+---
+
+## 🌐 Admin panel URL
+
+```text
+http://localhost/php-online-pizza-delivery/admin/admin_index.php
+```
+
+---
+
+## 🔑 Demo Credentials
+
+### Admin Login
+
+```text
+Email: admin@example.com
+Password: admin123
+```
+
+> These credentials are included for demonstration purposes and can be changed through the database.
+
+---
+
+## 🎨 Bootstrap Integration
+
+This project uses Bootstrap to create a responsive and modern user interface.
+
+### Bootstrap Features Used
+
+* Responsive Navigation Bar
+* Grid System
+* Forms and Input Controls
+* Buttons and Alerts
+* Responsive Layout
+* Mobile-Friendly Design
+
+### Offline Support
+
+Bootstrap files are stored locally within the project directory.
+
+No internet connection is required for Bootstrap functionality after project setup.
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+* PHP Development
+* MySQL Database Management
+* CRUD Operations
+* Session Management
+* Authentication Systems
+* Bootstrap Framework
+* Responsive Web Design
+* Full-Stack Web Development
 
 ---
 
@@ -176,36 +238,22 @@ The application should now be running successfully.
 
 This project was developed for educational purposes.
 
-Possible future improvements:
+Future improvements may include:
 
-* Password Hashing using `password_hash()`
-* SQL Injection Prevention using Prepared Statements
-* Input Validation and Sanitization
+* Password Hashing
+* SQL Injection Prevention
+* Input Validation
 * Role-Based Access Control
 * Email Verification
 
 ---
 
-## 🎯 Learning Outcomes
-
-Through this project, I gained experience in:
-
-* PHP Development
-* MySQL Database Design
-* CRUD Operations
-* Authentication Systems
-* Session Management
-* Bootstrap Framework
-* Responsive Web Design
-* Full-Stack Web Development
-
----
-
-## 📈 Future Enhancements
+## 🚀 Future Enhancements
 
 * Online Payment Gateway Integration
-* Order Tracking System
 * Email Notifications
-* Product Search and Filtering
+* Order Tracking System
+* Product Search Functionality
 * Customer Reviews and Ratings
-* REST API Integration
+* REST API Development
+
